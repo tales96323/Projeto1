@@ -1,4 +1,4 @@
-import database from "../../../../infra/database.js";
+import database from "infra/database.js";
 
 // cria uma */api/status - mas precisa de uma função
 async function status(request, response) {
