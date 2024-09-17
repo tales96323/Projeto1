@@ -2,7 +2,7 @@
   "name": "projeto1",
   "version": "1.0.0",
   "description": "Inicio de um Portifólio usando aprendizados do Curso.Dev",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "test": "jest",
     "dev": "npm run services:up && next dev",

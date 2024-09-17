@@ -4,8 +4,8 @@ function Home() {
   const [htmlContent, setHtmlContent] = useState("");
 
   useEffect(() => {
-    // Carrega o conteúdo do arquivo index.html na pasta public
-    fetch("/index.html")
+    // Ajusta o caminho para ser relativo à raiz do aplicativo
+    fetch(`${process.env.PUBLIC_URL}/index.html`)
       .then((response) => response.text())
       .then((data) => {
         setHtmlContent(data);
