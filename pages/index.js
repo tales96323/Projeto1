@@ -23,7 +23,7 @@ function Home() {
           <nav className="nav bd-grid">
             <div>
               <a href="#" className="nav__logo">
-                Tales
+                Site ainda em construção...
               </a>
             </div>
 
@@ -71,7 +71,7 @@ function Home() {
                 Hi,
                 <br />
                 I'm <span className="home__title-color">Tales</span>
-                <br /> Web Development
+                <br /> Development
               </h1>
               <a href="#contact" className="button">
                 Contact
@@ -282,6 +282,7 @@ function Home() {
             </a>
           </div>
           <p className="footer__copy">&#169; All rights reserved</p>
+          <p className="footer__copy"> Projeto ainda em construção</p>
         </footer>
 
         {/* ===== SCROLL REVEAL ===== */}
