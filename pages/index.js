@@ -23,7 +23,7 @@ function Home() {
           <nav className="nav bd-grid">
             <div>
               <a href="#" className="nav__logo">
-                Site ainda em construção...
+                Website still in production...
               </a>
             </div>
 
@@ -123,7 +123,7 @@ function Home() {
                 <img src="/assets/img/about.jpg" alt="About" />
               </div>
               <div>
-                <h2 className="about__subtitle">Olá! Sou o Tales.</h2>
+                <h2 className="about__subtitle">About me:</h2>
                 <p className="about__text">
                   I am a Software developer. Dedicated, with strong
                   communication skills and the ability to work in a team. I have
@@ -282,7 +282,7 @@ function Home() {
             </a>
           </div>
           <p className="footer__copy">&#169; All rights reserved</p>
-          <p className="footer__copy"> Projeto ainda em construção</p>
+          <p className="footer__copy"> Website still in production... </p>
         </footer>
 
         {/* ===== SCROLL REVEAL ===== */}
