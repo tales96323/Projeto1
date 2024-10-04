@@ -210,13 +210,22 @@ function Home() {
           <section className="work section" id="work">
             <h2 className="section-title">Work</h2>
             <div className="work__container bd-grid">
-              <a href="#" className="work__img">
+              <a
+                href="https://github.com/tales96323/FronteiraEficiente"
+                className="work__img"
+              >
                 <img src="/assets/img/work1.jpg" alt="Work 1" />
               </a>
-              <a href="#" className="work__img">
+              <a
+                href="https://github.com/tales96323/Projeto1"
+                className="work__img"
+              >
                 <img src="/assets/img/work2.jpg" alt="Work 2" />
               </a>
-              <a href="#" className="work__img">
+              <a
+                href="https://github.com/tales96323/estudo_dados"
+                className="work__img"
+              >
                 <img src="/assets/img/work3.jpg" alt="Work 3" />
               </a>
             </div>
