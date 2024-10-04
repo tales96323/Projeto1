@@ -198,7 +198,7 @@ function Home() {
 
               <div>
                 <img
-                  src="/assets/img/work3.jpg"
+                  src="/assets/img/work4.jpg"
                   alt="Work"
                   className="skills__img"
                 />
@@ -218,15 +218,6 @@ function Home() {
               </a>
               <a href="#" className="work__img">
                 <img src="/assets/img/work3.jpg" alt="Work 3" />
-              </a>
-              <a href="#" className="work__img">
-                <img src="/assets/img/work4.jpg" alt="Work 4" />
-              </a>
-              <a href="#" className="work__img">
-                <img src="/assets/img/work5.jpg" alt="Work 5" />
-              </a>
-              <a href="#" className="work__img">
-                <img src="/assets/img/work6.jpg" alt="Work 6" />
               </a>
             </div>
           </section>
