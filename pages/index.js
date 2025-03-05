@@ -1,4 +1,7 @@
 import React from "react";
+import dynamic from "next/dynamic";
+// Importa o componente de forma dinâmica para que seja renderizado apenas no cliente
+const Typed = dynamic(() => import("react-typed"), { ssr: false });
 
 function Home() {
   return (
@@ -71,8 +74,21 @@ function Home() {
                 Hi,
                 <br />
                 I'm <span className="home__title-color">Tales</span>
-                <br /> Development
+                <br />
+                <Typed
+                  strings={[
+                    "Web Development",
+                    "Mechanical Engineering",
+                    "Software Engineering",
+                    "Data Analytics",
+                    "Project Steel Structural",
+                  ]}
+                  typeSpeed={100}
+                  backSpeed={50}
+                  loop
+                />
               </h1>
+
               <a href="#contact" className="button">
                 Contact
               </a>
