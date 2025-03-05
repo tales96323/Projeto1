@@ -1,5 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
 function Home() {
+  const professions = [
+    "Mechanical Engineer",
+    "Structural Steel Designer",
+    "Programmer",
+    "Software Engineer",
+    "Data Analyst",
+    "Cost Estimator",
+    "Industrial Planner"
+  ];
+
+  const [currentProfession, setCurrentProfession] = useState(professions[0]);
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % professions.length);
+    }, 3500); // Muda a profissão a cada 3.5 segundos
+
+    return () => clearInterval(interval);
+  }, [professions.length]);
+
+  useEffect(() => {
+    setCurrentProfession(professions[index]);
+  }, [index, professions]);
+
   return (
     <div>
       <head>
@@ -70,7 +96,8 @@ function Home() {
                 Hi,
                 <br />
                 I'm <span className="home__title-color">Tales</span>
-                <br /> Development
+                <br />
+                <span className="home__profession">{currentProfession}</span>
               </h1>
               <a href="#contact" className="button">
                 Contact
