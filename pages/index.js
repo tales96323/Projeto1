@@ -3,12 +3,12 @@ import React, { useState, useEffect } from "react";
 function Home() {
   const professions = [
     "Mechanical Engineer",
-    "Structural Steel Designer",
+    "Structural Designer",
     "Programmer",
     "Software Engineer",
     "Data Analyst",
     "Cost Estimator",
-    "Industrial Planner"
+    "Industrial Planner",
   ];
 
   const [currentProfession, setCurrentProfession] = useState(professions[0]);
