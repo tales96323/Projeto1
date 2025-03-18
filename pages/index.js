@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 
 function Home() {
   const professions = [
-    "Mechanical Engineer",
     "Structural Designer",
     "Programmer",
     "Software Engineer",
@@ -17,7 +16,7 @@ function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % professions.length);
-    }, 3500); // Muda a profissão a cada 3.5 segundos
+    }, 3500);
 
     return () => clearInterval(interval);
   }, [professions.length]);
@@ -97,7 +96,9 @@ function Home() {
                 <br />
                 I'm <span className="home__title-color">Tales</span>
                 <br />
-                <span className="home__profession">{currentProfession}</span>
+                <span className="home__profession" key={currentProfession}>
+                  {currentProfession}
+                </span>
               </h1>
               <a href="#contact" className="button">
                 Contact
@@ -151,12 +152,34 @@ function Home() {
               <div>
                 <h2 className="about__subtitle">About me:</h2>
                 <p className="about__text">
-                  I am a Software developer. Dedicated, with strong
-                  communication skills and the ability to work in a team. I have
-                  a keen interest in providing positive customer experiences and
-                  ensuring high-quality customer service. My discipline and
-                  attention to detail, developed in engineering, will be applied
-                  to ensure excellence in the service provided.
+                  I am a engineer, planner and developer, passionate about
+                  innovation at the intersection of diverse skills. With a
+                  foundation in mechanical engineering and software development,
+                  I blend technical expertise with insights from engineering,
+                  project management, and user experience design.
+                </p>
+                <p className="about__text">
+                  My holistic approach allows me to:
+                </p>
+                <ul className="about__list">
+                  <li>
+                    • Solve problems creatively, drawing from multiple
+                    disciplines.
+                  </li>
+                  <li>
+                    • Bridge gaps between technical execution and user-centered
+                    solutions.
+                  </li>
+                  <li>• Adapt seamlessly to evolving project demands.</li>
+                </ul>
+                <p className="about__text">
+                  I believe multidisciplinary thinking is key to tackling modern
+                  challenges. My engineering background brings analytical rigor,
+                  while software development fosters agility. Together, they
+                  enable me to deliver robust, human-centric solutions.
+                </p>
+                <p className="about__text">
+                  Let’s build something that transcends categories.
                 </p>
               </div>
             </div>
@@ -169,55 +192,61 @@ function Home() {
               <div>
                 <h2 className="skills__subtitle">Professional Skills</h2>
                 <p className="skills__text">
-                  Below are some of my skills related to programming and
-                  software development.
+                  Below are some of my skills and the time of experience.
                 </p>
 
-                {/* Python */}
+                {/* Developer */}
                 <div className="skills__data">
                   <div className="skills__names">
-                    <i className="bx bxl-python skills__icon"></i>
-                    <span className="skills__name">Python</span>
+                    <i className="bx bx-code-alt skills__icon"></i>{" "}
+                    {/* Ícone genérico para Developer */}
+                    <span className="skills__name">Developer</span>
                   </div>
-                  <div className="skills__bar skills__python"></div>
+                  <div className="skills__bar skills__developer"></div>{" "}
+                  {/* Atualizei a classe para skills__developer */}
                   <div>
-                    <span className="skills__percentage">85%</span>
+                    <span className="skills__percentage">2 years</span>
                   </div>
                 </div>
 
                 {/* Data Analysis */}
                 <div className="skills__data">
                   <div className="skills__names">
-                    <i className="bx bxs-data skills__icon"></i>
+                    <i className="bx bxs-data skills__icon"></i>{" "}
+                    {/* Mantido o ícone de Data Analysis */}
                     <span className="skills__name">Data Analysis</span>
                   </div>
                   <div className="skills__bar skills__data-analysis"></div>
                   <div>
-                    <span className="skills__percentage">75%</span>
+                    <span className="skills__percentage">2 years</span>
                   </div>
                 </div>
 
-                {/* Docker */}
+                {/* Mechanical and Structural Design */}
                 <div className="skills__data">
                   <div className="skills__names">
-                    <i className="bx bxl-docker skills__icon"></i>
-                    <span className="skills__name">Docker</span>
+                    <i className="bx bx-cog skills__icon"></i>{" "}
+                    <span className="skills__name">
+                      Mechanical and Structural Design
+                    </span>
                   </div>
-                  <div className="skills__bar skills__docker"></div>
+                  <div className="skills__bar skills__mechanical-design"></div>{" "}
                   <div>
-                    <span className="skills__percentage">65%</span>
+                    <span className="skills__percentage">4 years</span>
                   </div>
                 </div>
 
-                {/* JavaScript */}
+                {/* Planner and Cost Estimator */}
                 <div className="skills__data">
                   <div className="skills__names">
-                    <i className="bx bxl-javascript skills__icon"></i>
-                    <span className="skills__name">JavaScript</span>
+                    <i className="bx bx-calculator skills__icon"></i>{" "}
+                    <span className="skills__name">
+                      Planner and Cost Estimator
+                    </span>
                   </div>
-                  <div className="skills__bar skills__javascript"></div>
+                  <div className="skills__bar skills__planner-cost-estimator"></div>{" "}
                   <div>
-                    <span className="skills__percentage">85%</span>
+                    <span className="skills__percentage">3 years</span>
                   </div>
                 </div>
               </div>
@@ -253,6 +282,15 @@ function Home() {
                 className="work__img"
               >
                 <img src="/assets/img/work3.jpg" alt="Work 3" />
+              </a>
+              <a href=" " className="work__img">
+                <img src="/assets/img/work6.jpg" alt="Work 6" />
+              </a>
+              <a href=" " className="work__img">
+                <img src="/assets/img/work5.jpg" alt="Work 5" />
+              </a>
+              <a href=" " className="work__img">
+                <img src="/assets/img/work7.jpg" alt="Work 7" />
               </a>
             </div>
           </section>
