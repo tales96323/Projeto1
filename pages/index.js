@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import emailjs from "emailjs-com";
 
 function Home() {
   const professions = [
@@ -275,7 +276,7 @@ function Home() {
                 href="https://github.com/tales96323/EduGramApp"
                 className="work__img"
               >
-                <img src="/assets/img/work2.jpg" alt="Work 2" />
+                <img src="/assets/img/work2.png" alt="Work 2" />
               </a>
               <a
                 href="https://github.com/tales96323/estudo_dados"
