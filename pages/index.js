@@ -272,7 +272,7 @@ function Home() {
                 <img src="/assets/img/work1.jpg" alt="Work 1" />
               </a>
               <a
-                href="https://github.com/tales96323/Projeto1"
+                href="https://github.com/tales96323/EduGramApp"
                 className="work__img"
               >
                 <img src="/assets/img/work2.jpg" alt="Work 2" />
